@@ -1,0 +1,27 @@
+{
+  "name": "ts-react-babel-webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Tyler Durham <TylerDurham@users.noreply.github.com> (https://github.com/TylerDurham)",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "babel-loader": "^8.0.6",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-stream": "^0.0.2",
+    "typescript": "^3.5.3",
+    "webpack": "^4.37.0",
+    "webpack-cli": "^3.3.6"
+  }
+}
