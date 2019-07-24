@@ -9,6 +9,6 @@ The easiest way is to use this as a [template when creating a new GitHub repo](h
 ```
     git clone https://github.com/TylerDurham/ts-react-multipage-spa.git
     mv ts-react-multipage-spa my-spa-project && cd my-spa-project
-    yarn init -y
+    yarn install -y
     gulp serve
 ```
