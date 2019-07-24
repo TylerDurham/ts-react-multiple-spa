@@ -1,10 +1,10 @@
-# ts-react-multipage-spa
+# ts-react-multiple-spa
 
 Simple TypeScript project that allows for multiple React SPAs. I use this when I need to create one or more React Single-Page Applications.
 
 ## Steps to Setup
 
-The easiest way is to use this as a [template when creating a new GitHub repo](https://github.com/TylerDurham/ts-react-multipage-spa/generate). You can also run from the command line:
+The easiest way is to use this as a [template when creating a new GitHub repo](https://github.com/TylerDurham/ts-react-multiple-spa/generate). You can also run from the command line:
 
 ```
     git clone https://github.com/TylerDurham/ts-react-multipage-spa.git
