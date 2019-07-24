@@ -8,7 +8,7 @@
   "scripts": {
     "start": "gulp serve"
   },
-  "keywords": ["typescript", "react", "babel", "webpack", "template", "SPA"],
+  "keywords": ["typescript", "react", "babel", "webpack", "template", "SPA", "gulp"],
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
