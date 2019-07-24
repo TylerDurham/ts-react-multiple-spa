@@ -1,9 +1,14 @@
 {
-  "name": "ts-react-babel-webpack",
+  "name": "ts-react-multipage-spa",
+  "description": "Simple TypeScript project that allows for multiple React SPAs.",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Tyler Durham <TylerDurham@users.noreply.github.com> (https://github.com/TylerDurham)",
   "license": "MIT",
+  "scripts": {
+    "start": "gulp serve"
+  },
+  "keywords": ["typescript", "react", "babel", "webpack", "template", "SPA"],
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
