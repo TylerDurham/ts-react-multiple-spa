@@ -1,5 +1,5 @@
 {
-  "name": "ts-react-multipage-spa",
+  "name": "ts-react-multiple-spa",
   "description": "Simple TypeScript project that allows for multiple React SPAs.",
   "version": "1.0.0",
   "main": "index.js",
