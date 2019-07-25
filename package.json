@@ -1,6 +1,6 @@
 {
   "name": "ts-react-multiple-spa",
-  "description": "Simple TypeScript project that allows for multiple React SPAs.",
+  "description": "Simple TypeScript project template that allows for multiple React single page applications (SPA).",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Tyler Durham <TylerDurham@users.noreply.github.com> (https://github.com/TylerDurham)",
