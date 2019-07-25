@@ -54,7 +54,7 @@ When you build the project, the assets transpile (and flattens) to this
 
 ## Adding or Modifying Single Page Apps
 
-To add/modify single page app instances, simply modify *webpacl.config.js* and add/remove your SPA entry points. Any HTML files in your component directory will be copied to *./build*, and image files will be copied to *./build/images*. Transpiled and bundled TSX files will be copied to the *./build/js* directory.
+To add/modify single page app instances, simply modify *[webpack.config.js](https://github.com/TylerDurham/ts-react-multiple-spa/blob/master/webpack.config.js)* and add/remove your SPA entry points. Any HTML files in your component directory will be copied to *./build*, and image files will be copied to *./build/images*. Transpiled and bundled TSX files will be copied to the *./build/js* directory.
 
 ```
     entry: {
