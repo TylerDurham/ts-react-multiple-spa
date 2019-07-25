@@ -26,11 +26,13 @@ The source directory structure allows for directories to be used to organize Rea
     * /spa1
         * spa1.html
         * spa1.tsx
-        * spa1.png
+        * /images
+            * spa1.png
     * /spa2
         * spa2.html
         * spa2.tsx
-        * spa2.png
+        * /images
+            * spa2.png
     * index.html
     * index.tsx
 ```
