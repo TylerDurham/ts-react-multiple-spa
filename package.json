@@ -8,7 +8,15 @@
   "scripts": {
     "start": "gulp serve"
   },
-  "keywords": ["typescript", "react", "babel", "webpack", "template", "SPA", "gulp"],
+  "keywords": [
+    "typescript",
+    "react",
+    "babel",
+    "webpack",
+    "template",
+    "SPA",
+    "gulp"
+  ],
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
@@ -24,6 +32,7 @@
     "del": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-connect": "^5.7.0",
+    "gulp-flatten": "^0.4.0",
     "gulp-stream": "^0.0.2",
     "typescript": "^3.5.3",
     "webpack": "^4.37.0",

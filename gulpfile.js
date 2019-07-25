@@ -3,11 +3,12 @@ const exec = require('child_process').exec;
 const del = require('del');
 const path = require('path');
 const connect = require('gulp-connect');
+const flatten = require('gulp-flatten');
 
 const PATHS = {
     source: {
         base: './src',
-        onedrive: './src/' + 'onedrive'
+        spa: './src/' + 'spa'
     },
     output: {
         base: './build'
@@ -17,23 +18,19 @@ const PATHS = {
 const sourceBase = "./src";
 const outputBase = "./build"
 
-const HTML_FILES = [
-    path.join(PATHS.source.base, 'index.html'),
-    path.join(PATHS.source.onedrive, 'onedrive.html')
-]
-
 const copyHtml = (done) => {
-    return gulp.src([
-        `${sourceBase}/index.html`,
-        `${sourceBase}/onedrive/onedrive.html`
-    ]).pipe(gulp.dest(`${outputBase}`));
+    return gulp.src('./src/**/*.html')
+    .pipe(flatten())
+    .pipe(gulp.dest('./build'));
 }
 
 const copyImages = (done) => {
-    return gulp.src('./src/images/**/*.*').pipe(gulp.dest('./build/images'));
+    return gulp.src(['src/**/*.png'])
+    .pipe(flatten())
+    .pipe(gulp.dest('./build/images'));
 }
 
-const copy = gulp.parallel(copyHtml, copyImages);
+const copy = gulp.series(copyHtml, copyImages);
 
 exports.copy = copy;
 exports.copy.description = `Copies the source files located at (${PATHS.source.base}) to the output directory located at (${PATHS.output}).`

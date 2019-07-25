@@ -15,7 +15,8 @@ module.exports = {
     mode: 'development',
     entry: {
         'index': `${sourceBase}/index.tsx`,
-        'onedrive': `${sourceBase}/onedrive/onedrive.tsx`
+        'spa1': `${sourceBase}/spa1/spa1.tsx`,
+        'spa2': `${sourceBase}/spa2/spa2.tsx`
     },
     output: {
         path: path.join(__dirname, `${outputBase}/js`),
