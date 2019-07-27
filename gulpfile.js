@@ -31,7 +31,7 @@ const copyImages = (done) => {
 const copy = gulp.series(copyHtml, copyImages);
 
 exports.copy = copy;
-exports.copy.description = `Copies the source files located at (${sourceBase}) to the output directory located at (${PATHS.output}).`
+exports.copy.description = `Copies the source files located at (${sourceBase}) to the output directory located at (${outputBase}).`
 
 /**
  * Deletes the project output directory  located at (${outputBase}).
@@ -71,7 +71,7 @@ exports.build.description = 'Builds the project.';
  * @param {Function} done Callback function that lets Gulp know the task is finished.
  */
 const watch = (done) => {
-    return gulp.watch(`${PATHS.source.base}/**/*.*`, gulp.series(build));
+    return gulp.watch(`${sourceBase}/**/*.*`, gulp.series(build));
 }
 exports.watch = watch;
 exports.watch.description = 'Watches the project for changes, and runs the build when changes occur.'
@@ -88,5 +88,5 @@ const serve = (done) => {
     });
     done();
 }
+exports.serve = gulp.series(build, serve, watch);
 exports.serve.description = 'Builds the project, starts the server, and watches for changes.';
-exports.serve = gulp.series(build, serve, watch)

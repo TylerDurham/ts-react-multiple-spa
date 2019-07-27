@@ -6,7 +6,8 @@
   "author": "Tyler Durham <TylerDurham@users.noreply.github.com> (https://github.com/TylerDurham)",
   "license": "MIT",
   "scripts": {
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "test": "jest"
   },
   "keywords": [
     "typescript",
@@ -34,6 +35,7 @@
     "gulp-connect": "^5.7.0",
     "gulp-flatten": "^0.4.0",
     "gulp-stream": "^0.0.2",
+    "jest": "^24.8.0",
     "typescript": "^3.5.3",
     "webpack": "^4.37.0",
     "webpack-cli": "^3.3.6"
